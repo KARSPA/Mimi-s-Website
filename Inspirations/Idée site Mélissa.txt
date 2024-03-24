@@ -1,0 +1,21 @@
+Site Mélissa
+
+Nom de l'entreprise fictive : Éclats de saveurs/ Éclats de sensation / Sensation chocolatée
+
+Navbar sobre horizontale avec 4-5 onglets : Page accueil, présentation, 5 sens, dégustation et produits
+Style : https://dribbble.com/shots/14250429-Keventers-Kitkat-MilkShake-Landing-Page
+ou https://dribbble.com/shots/23329743-Home-page-Cocoa-Boutique
+
+
+
+
+INSPI PRINCIPALE : 
+Cuvée Chocolat : https://cuveechocolate.com.au/
+
+Type "One Page" avec des infos supp dans des onglets/sur boutons cliquables
+
+Transitions entre onglets/pages
+
+Photos type "artisanal"
+
+"Boutique" intégrée

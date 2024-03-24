@@ -1,0 +1,342 @@
+*,::before,::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #1d0e08;
+    color: #f1f1f1;
+    font-family: Open Sans, sans-serif;
+
+    /* height: 300vh; */
+}
+
+@font-face {
+    font-family: "Caligna";
+    src: url(../../ressources/CalignaDEMO.ttf);
+}
+
+
+/* NAVBAR.CSS IMPORTÉE DANS LE HEAD ! */
+
+
+.go-down-btn{
+    display: block;
+    margin: 0 auto;
+    opacity: 0.7;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 70px;
+    height: 30px;
+    background-color: transparent;
+    transform: rotate(90deg);
+    animation: altslide 0.5s ease-in alternate infinite;
+    /* border: inset 1px crimson; */
+}
+
+.go-down-btn img{
+    width: 100%;
+}
+
+
+
+
+main{
+    margin: 0 auto;
+    max-width: 1600px;
+    /* border: 1px solid yellow; */
+}
+
+main .center-logo{
+    position: relative;
+    z-index: 10;
+    margin: 0 auto ;
+    cursor: pointer;
+    width: fit-content;
+    padding: 10px;
+    text-align: center;
+
+    /* opacity: 0; */
+    transform: translateY(-60px);
+    /* animation: logoapparition 0.8s ease-out forwards; */
+}
+main .center-logo a{
+    display: block;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #f1f1f1;
+    transition: opacity 0.3s;
+    /* border: 1px solid crimson; */
+}
+
+main .center-logo a:hover{
+    opacity: 0.5;
+    
+}
+
+main .center-logo .return{
+    display: block;
+    font-family: Open Sans, sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 18px;
+    transform: translateY(-7px);
+}
+
+main .center-logo p{
+    font-family: EB Garamond, sans-serif;
+}
+main .center-logo span{
+    font-size: 28px;
+}
+
+.titles-container{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    
+}
+
+.title{
+    font-family: Great Vibes, sans-serif;
+    font-size: 60px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin: 50px 0 0 100px ;
+}
+.subtitle{
+    font-family: Open Sans, sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    align-self: end;
+
+}
+
+.introduction-container{
+    border: 1px solid rgb(60, 29, 12);
+    border-radius: 10px;
+    padding: 20px;
+    width: 85%;
+    margin: 40px auto 150px;
+}
+
+.introduction{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.introduction span{
+    display: block;
+    margin: 20px 0 10px 0;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+
+.senses-container{
+    width: 85%;
+    /* border: 1px solid crimson; */
+    display: grid;  
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 150px auto;
+    text-align: center;
+}
+
+.sense{
+    border-radius: 10px;
+    border: 1px solid rgb(60, 29, 12);
+    min-height: 400px;
+    height:fit-content;
+}
+
+.sense-title{
+    margin: 20px 0 20px;
+    font-family: Great Vibes, sans-serif;
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+.sense-title span{
+    position: relative;
+}
+
+.sense-title span::after{
+    content: "";
+    background-color: #f1f1f1;
+    height: 1px;
+    width: 50%;
+    position: absolute;
+    bottom: 10px;
+    right: 25%;
+}
+
+.sense-description{
+    /* border: 1px solid blue; */
+    display: block;
+    width: fit-content;
+    text-align: left;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.sense-description span{
+    font-style:italic;
+    margin: 30px 0 10px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    display: block;
+}
+
+.earing .sense-description{
+    margin-top: 50px;
+}
+
+.participate-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    position: relative;
+}
+
+.participate-link{
+    display: block;
+    width: fit-content;
+    font-size: 24px;
+    text-decoration: none;
+    color: #f1f1f1;
+    font-family: Open Sans, sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.border{
+    border: 3px solid rgb(60, 29, 12);
+    padding: 20px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    opacity:1;
+    transition: opacity 0.1s ease-in;
+    /* box-shadow: 0 2px 5px rgba(60, 29, 12, 0.4); */
+    
+}
+
+.border::after{
+    content: "";
+    width: 30%;
+    height: 1px;
+    background-color: #f1f1f1;
+    position: absolute;
+    bottom: 46%;
+    right: 35%;
+    transform: scale(0);
+    transition: transform 0.3s ease-in;
+}
+
+.border:hover::after{
+    transform: scale(1);
+}
+
+.border:hover{
+    opacity: 0.7;
+}
+
+.participate-link::after{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #f1f1f1;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: scale(0);
+    transition: transform 0.3s ease-in;
+}
+
+
+
+footer{
+    border-top: 1px solid #783b18;
+    background-color: #0e0b0a;
+}
+
+footer p{
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer p a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #783b18;
+}
+
+
+.reveal{
+    opacity: 0;
+    transform: translateY(-50px);
+}
+
+.reveal-visible{
+    opacity:1;
+    transform: translateY(0);
+    transition: 1.5s cubic-bezier(.5,0,0,1);
+}
+
+.sense.reveal{
+    opacity: 0;
+    transform: translateY(-50px);
+}
+
+.sense.reveal-visible{
+    opacity:1;
+    transform: translateY(0);
+    transition: 1.5s cubic-bezier(.5,0,0,1);
+}
+
+.sense.sight.reveal-visible{
+    transition-delay: 0.2s;
+}
+.sense.touch.reveal-visible{
+    transition-delay: 0.3s;
+}
+.sense.scent.reveal-visible{
+    transition-delay: 0.4s;
+}
+.sense.earing.reveal-visible{
+    transition-delay: 0.5s;
+}
+.sense.taste.reveal-visible{
+    transition-delay: 0.6s;
+}
+
+.participate-container.reveal{
+    opacity: 0;
+    transform: translateX(30px);
+}
+
+.participate-container.reveal-visible{
+    opacity: 1;
+    transform: translateX(0);
+    transition: 1.5s 0.7s cubic-bezier(.5,0,0,1);
+}
+
+@keyframes altslide{
+    100%{
+        transform: rotate(90deg) translateX(10px);
+    }
+}
+
+@keyframes fadein{
+    100%{
+        opacity: 1;
+    }
+}
