@@ -1,2 +1,98 @@
 @import url("../style/navbar.css");
 @import url("../style/reset.css");
+
+
+body{
+    background-color: #1d0e08;
+    color: #f1f1f1;
+    font-family: Caligna, sans-serif;
+    /* height: 300vh; */
+}
+
+@font-face {
+    font-family: "Caligna";
+    src: url(../../ressources/CalignaDEMO.ttf);
+}
+
+.navbar .left-links a:nth-of-type(2){
+    color: #783b18;
+}
+
+
+main .center-logo{
+    position: relative;
+    z-index: 10;
+    margin: 0 auto ;
+    cursor: pointer;
+    width: fit-content;
+    padding: 10px;
+    text-align: center;
+
+    /* opacity: 0; */
+    transform: translateY(-60px);
+    /* animation: logoapparition 0.8s ease-out forwards; */
+}
+
+main .center-logo a{
+    display: block;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #f1f1f1;
+    transition: opacity 0.3s;
+    /* border: 1px solid crimson; */
+}
+
+main .center-logo a:hover{
+    opacity: 0.5;
+    
+}
+
+main .center-logo .return{
+    display: block;
+    font-family: Open Sans, sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 18px;
+    transform: translateY(-7px);
+}
+
+main .center-logo p{
+    font-family: EB Garamond, sans-serif;
+}
+main .center-logo span{
+    font-size: 28px;
+}
+
+.title{
+    font-family: Great Vibes, sans-serif;
+    font-size: 60px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin: 50px 0 0 200px ;
+}
+
+
+
+
+
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #783b18;
+    background-color: #0e0b0a;
+}
+
+footer p{
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer p a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #783b18;
+}
