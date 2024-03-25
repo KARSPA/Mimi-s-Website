@@ -15,10 +15,6 @@ body{
 }
 
 
-/* NAVBAR.CSS IMPORTÉE DANS LE HEAD ! */
-
-
-
 main .center-logo{
     position: relative;
     z-index: 10;
