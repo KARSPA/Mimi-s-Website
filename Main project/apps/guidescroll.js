@@ -31,7 +31,7 @@ document.querySelectorAll(".observed").forEach(element=>{
     observer.observe(element);
 })
 
-//Gère l'observation des éléments révélés au chargement de la page/appartition à l'écran
+// Gère l'observation des éléments révélés au chargement de la page/appartition à l'écran
 document.querySelectorAll(".reveal").forEach(element => {
     observer.observe(element)
 })
