@@ -6,6 +6,7 @@ body{
     background-color: #1d0e08;
     color: #f1f1f1;
     font-family: Caligna, sans-serif;
+    position: relative;
     /* height: 300vh; */
 }
 
@@ -93,6 +94,9 @@ main .center-logo span{
     color: #f1f1f1;
     cursor: pointer;
     position: relative;
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: slidein forwards 1.5s 0.4s cubic-bezier(.5,0,0,1);
 }
 .sense-btn::after{
     content: "DÉCOUVRIR";
@@ -105,10 +109,10 @@ main .center-logo span{
     height: 80px;
     /* border: 1px solid crimson; */
     border-radius: 0 0 10px 10px;
-    transform: translateY(-42px);
+    transform: translateY(-60px);
     opacity: 0;
-    transition: transform 0.3s ease-out,
-    opacity 0.3s ease-out;
+    transition: transform 0.4s ease-out,
+    opacity 0.2s ease-out;
 }
 
 .sense-btn:hover::after{
@@ -127,7 +131,97 @@ main .center-logo span{
     opacity: 0.7;
 }
 
+/* STYLE DES CARDS DES SENS */
 
+.senses-card-container{
+    max-width: 1600px;
+    margin: 400px auto 0;
+    padding-bottom: 200px;
+    /* border: 1px solid yellow; */
+}
+
+.sense-card{
+    position: relative;
+    border: 1px solid #783b18;
+    border-radius: 10px;
+    margin-bottom: 100px;
+    height: 80vh;
+    padding: 30px;
+}
+.sense-card .left-side{
+    /* border: 1px solid blue; */
+    width: 70%;
+    height: 100%;
+    font-weight: 300;
+}
+
+.sense-card .right-side {
+    position: absolute;
+    height: 350px;
+    right: 30px;
+    top: 30px;
+}
+
+.left-side .card-title{
+    font-family: Open Sans, sans-serif;
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.left-side .composition{
+    margin: 30px 0 40px;
+    line-height: 130%;
+}
+
+.left-side .composition span{
+    display: block;
+    font-weight: 400;
+    margin: 20px 0 10px;
+}
+
+.left-side .description{
+    margin: 20px 0 40px;
+}
+
+.left-side .worth-notice{
+    line-height: 130%;
+    margin-bottom: 40px;
+}
+
+.left-side .worth-notice span{
+    display: block;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.left-side .recognize span{
+    display: block;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+
+
+
+.sense-card .right-side img{
+    height: 100%;
+    border-radius: 5px 5px 0 0;
+}
+ .sense-card .image-description{
+    background-color: antiquewhite;
+    color: #1d0e08;
+    padding: 12px;
+    text-align: center;
+    border-radius: 0 0 5px 5px;
+ }
+
+
+
+
+
+
+/* FIN DU STYLE DES CARDS DE SENS */
 
 footer{
     position: absolute;
@@ -146,4 +240,28 @@ footer p a{
     text-decoration: none;
     cursor: pointer;
     color: #783b18;
+}
+
+
+.sense-btn.sense-1{
+    animation-delay: 0.1s;
+}
+.sense-btn.sense-2{
+    animation-delay: 0.2s;
+}
+.sense-btn.sense-3{
+    animation-delay: 0.4s;
+}
+.sense-btn.sense-4{
+    animation-delay: 0.6s;
+}
+.sense-btn.sense-5{
+    animation-delay: 0.8s;
+}
+
+@keyframes slidein{
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
