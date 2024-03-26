@@ -1,5 +1,5 @@
-@import url("../style/navbar.css");
-@import url("../style/reset.css");
+@import url("./navbar.css");
+@import url("./reset.css");
 
 
 body{
@@ -14,9 +14,9 @@ body{
     src: url(../../ressources/CalignaDEMO.ttf);
 }
 
-
-/* NAVBAR.CSS IMPORTÉE DANS LE HEAD ! */
-
+.navbar .left-links a:nth-of-type(1){
+    color: #783b18;
+}
 
 
 main .center-logo{

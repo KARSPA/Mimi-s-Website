@@ -71,7 +71,7 @@ window.addEventListener("scroll", handleButtonApparition);
 function handleButtonApparition(){
     if(window.scrollY < 800){
         goToTopBtn.style.display = "none"
-    }else if(window.scrollY > 800 && window.scrollY < document.body.clientHeight - window.innerHeight){
+    }else if(window.scrollY > 800 && window.scrollY < document.body.clientHeight - window.innerHeight - 700){
         goToTopBtn.style.display = "block"
         goDownBtn.style.display = "block"
     }else{

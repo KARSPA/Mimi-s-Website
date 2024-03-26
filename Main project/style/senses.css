@@ -1,0 +1,368 @@
+@import url("../style/navbar.css");
+@import url("../style/reset.css");
+
+
+body{
+    background-color: #1d0e08;
+    color: #f1f1f1;
+    font-family: Caligna, sans-serif;
+    position: relative;
+    /* height: 300vh; */
+}
+
+@font-face {
+    font-family: "Caligna";
+    src: url(../../ressources/CalignaDEMO.ttf);
+}
+
+.navbar .left-links a:nth-of-type(2){
+    color: #783b18;
+}
+
+
+main .center-logo{
+    position: relative;
+    z-index: 10;
+    margin: 0 auto ;
+    cursor: pointer;
+    width: fit-content;
+    padding: 10px;
+    text-align: center;
+
+    /* opacity: 0; */
+    transform: translateY(-60px);
+    /* animation: logoapparition 0.8s ease-out forwards; */
+}
+
+main .center-logo a{
+    display: block;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #f1f1f1;
+    transition: opacity 0.3s;
+    /* border: 1px solid crimson; */
+}
+
+main .center-logo a:hover{
+    opacity: 0.5;
+    
+}
+
+main .center-logo .return{
+    display: block;
+    font-family: Open Sans, sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 18px;
+    transform: translateY(-7px);
+}
+
+main .center-logo p{
+    font-family: EB Garamond, sans-serif;
+}
+main .center-logo span{
+    font-size: 28px;
+}
+
+.title{
+    font-family: Great Vibes, sans-serif;
+    font-size: 60px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin: 50px 0 0 200px ;
+}
+
+.senses-nav{
+    margin-top: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.sense-btn{
+    width: 300px;
+    height: 300px;
+    font-family: Open Sans, sans-serif;;
+    font-size: 22px;
+    /* padding: 10px 20px; */
+    background-color: transparent;
+    border: 1px solid #783b18;
+    border-radius: 10px;
+    color: #f1f1f1;
+    cursor: pointer;
+    position: relative;
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: slidein forwards 1.5s 0.4s cubic-bezier(.5,0,0,1);
+}
+.sense-btn::after{
+    content: "DÉCOUVRIR";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -80px;
+    width: 100%;
+    height: 80px;
+    /* border: 1px solid crimson; */
+    border-radius: 0 0 10px 10px;
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: transform 0.4s ease-out,
+    opacity 0.2s ease-in-out;
+}
+
+.sense-btn:hover::after{
+    opacity: 0.9;
+    transform: translateY(0);
+}
+
+.sense-btn img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.sense-btn img:hover{
+    opacity: 0.7;
+}
+
+
+.nav-buttons{
+    width: 200px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.go-down-btn{
+    opacity: 0.7;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 70px;
+    height: 30px;
+    background-color: transparent;
+    transform: rotate(90deg);
+    animation: altslide 0.5s 0.7s ease-in alternate infinite;
+    /* border: inset 1px crimson; */
+}
+
+.first-btn{
+    display: block;
+    margin: 200px auto;
+}
+.go-down-btn img{
+    width: 100%;
+}
+
+
+.go-to-top-btn{
+    height: 35px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    transform: rotate(-90deg);
+    animation: altslidebis 0.5s 0.7s ease-in alternate infinite;
+}
+
+.go-to-top-btn:hover{
+    opacity: 0.8;
+}
+
+.go-to-top-btn img{
+    width: 100%;
+    height: 100%;
+}
+
+.last-btn{
+    display: block;
+    margin: 0 auto;
+}
+
+/* STYLE DES CARDS DES SENS */
+
+.senses-card-container{
+    max-width: 1600px;
+    margin: 100px auto 0;
+    padding-bottom: 200px;
+    /* border: 1px solid yellow; */
+}
+
+.sense-card{
+    position: relative;
+    border: 1px solid #783b18;
+    border-radius: 10px;
+    margin-bottom: 100px;
+    height: fit-content;
+    padding: 30px;
+    margin: 100px 0 70px;
+}
+
+.sense-card.sense-card-2{
+    margin: 25% auto 170px;
+    height: 450px;
+}
+.sense-card.sense-card-3{
+    margin: 25% auto 170px;
+    height: 450px;
+}
+
+.sense-card.sense-card-4{
+    margin: 200px auto 60px;
+}
+.sense-card.sense-card-5{
+    margin: 200px auto 90px;
+}
+
+.sense-card.sense-card-5 .left-side{
+    width: 65%;
+}
+
+.sense-card .left-side{
+    /* border: 1px solid blue; */
+    width: 70%;
+    height: 100%;
+    font-weight: 300;
+}
+
+.sense-card .right-side {
+    position: absolute;
+    height: 350px;
+    right: 30px;
+    top: 30px;
+}
+
+.left-side .card-title{
+    font-family: Open Sans, sans-serif;
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.left-side .composition{
+    margin: 30px 0 40px;
+    line-height: 130%;
+}
+
+.left-side .composition span{
+    display: block;
+    font-weight: 400;
+    margin: 20px 0 10px;
+}
+
+.left-side .description{
+    margin: 20px 0 40px;
+}
+
+.left-side .description span{
+    display: block;
+    margin: 10px 0;
+}
+
+.left-side .worth-notice{
+    line-height: 130%;
+    margin-bottom: 40px;
+}
+
+.left-side .worth-notice span{
+    display: block;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.left-side .recognize span{
+    display: block;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+
+
+
+.sense-card .right-side img{
+    height: 100%;
+    border-radius: 5px 5px 0 0;
+}
+.sense-card .image-description{
+    background-color: antiquewhite;
+    color: #1d0e08;
+    padding: 12px;
+    text-align: center;
+    border-radius: 0 0 5px 5px;
+}
+
+.sense-card-5 .right-side img{
+    width: 500px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+
+/* FIN DU STYLE DES CARDS DE SENS */
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #783b18;
+    background-color: #0e0b0a;
+}
+
+footer p{
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer p a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #783b18;
+}
+
+
+.sense-btn.sense-1{
+    animation-delay: 0.1s;
+}
+.sense-btn.sense-2{
+    animation-delay: 0.2s;
+}
+.sense-btn.sense-3{
+    animation-delay: 0.4s;
+}
+.sense-btn.sense-4{
+    animation-delay: 0.6s;
+}
+.sense-btn.sense-5{
+    animation-delay: 0.8s;
+}
+
+@keyframes slidein{
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes altslide{
+    100%{
+        transform: rotate(90deg) translateX(10px);
+    }
+}
+
+@keyframes altslidebis{
+    100%{
+        transform: rotate(-90deg) translateX(10px);
+    }
+}

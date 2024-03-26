@@ -1,5 +1,5 @@
-@import url("../style/navbar.css");
-@import url("../style/reset.css");
+@import url("./navbar.css");
+@import url("./reset.css");
 
 
 
@@ -16,10 +16,9 @@ body{
     src: url(../../ressources/CalignaDEMO.ttf);
 }
 
-
-/* NAVBAR.CSS IMPORTÉE DANS LE HEAD ! */
-
-
+.navbar .right-links a:nth-of-type(2){
+    color: #783b18;
+}
 
 .go-down-btn{
     display: block;
