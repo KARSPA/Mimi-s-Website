@@ -131,6 +131,64 @@ main .center-logo span{
     opacity: 0.7;
 }
 
+
+.nav-buttons{
+    width: 200px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.go-down-btn{
+    opacity: 0.7;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 70px;
+    height: 30px;
+    background-color: transparent;
+    transform: rotate(90deg);
+    animation: altslide 0.5s 0.7s ease-in alternate infinite;
+    /* border: inset 1px crimson; */
+}
+
+.first-btn{
+    display: block;
+    margin: 200px auto;
+}
+.go-down-btn img{
+    width: 100%;
+}
+
+
+.go-to-top-btn{
+    height: 35px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    transform: rotate(-90deg);
+    animation: altslidebis 0.5s 0.7s ease-in alternate infinite;
+}
+
+.go-to-top-btn:hover{
+    opacity: 0.8;
+}
+
+.go-to-top-btn img{
+    width: 100%;
+    height: 100%;
+}
+
+.last-btn{
+    display: block;
+    margin: 0 auto;
+}
+
 /* STYLE DES CARDS DES SENS */
 
 .senses-card-container{
@@ -147,16 +205,23 @@ main .center-logo span{
     margin-bottom: 100px;
     height: fit-content;
     padding: 30px;
-    margin: 200px 0;
+    margin: 100px 0 70px;
 }
 
 .sense-card.sense-card-2{
-    margin: 25% auto;
+    margin: 25% auto 170px;
     height: 450px;
 }
 .sense-card.sense-card-3{
-    margin: 25% auto;
+    margin: 25% auto 170px;
     height: 450px;
+}
+
+.sense-card.sense-card-4{
+    margin: 200px auto 60px;
+}
+.sense-card.sense-card-5{
+    margin: 200px auto 90px;
 }
 
 .sense-card.sense-card-5 .left-side{
@@ -287,5 +352,17 @@ footer p a{
     100%{
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes altslide{
+    100%{
+        transform: rotate(90deg) translateX(10px);
+    }
+}
+
+@keyframes altslidebis{
+    100%{
+        transform: rotate(-90deg) translateX(10px);
     }
 }
