@@ -1,0 +1,15 @@
+@import url("./navbar.css");
+@import url("./reset.css");
+
+
+body{
+    background-color: #1d0e08;
+    color: #f1f1f1;
+    font-family: Caligna, sans-serif;
+    /* height: 300vh; */
+}
+
+@font-face {
+    font-family: "Caligna";
+    src: url(../../ressources/CalignaDEMO.ttf);
+}
