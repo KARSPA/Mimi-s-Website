@@ -71,20 +71,20 @@ main .center-logo span{
     font-size: 60px;
     font-weight: 300;
     letter-spacing: 3px;
-    margin: 50px 0 0 200px ;
+    margin: 50px 0 0 8% ;
 }
 
 .senses-nav{
-    margin-top: 70px;
-    width: 100%;
+    width: 95%;
     display: flex;
     justify-content: center;
     gap: 30px;
+    margin: 70px auto 0;
 }
 
 .sense-btn{
     width: 300px;
-    height: 300px;
+    aspect-ratio: 1;
     font-family: Open Sans, sans-serif;;
     font-size: 22px;
     /* padding: 10px 20px; */
