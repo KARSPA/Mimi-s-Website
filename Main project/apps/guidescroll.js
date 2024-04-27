@@ -52,7 +52,7 @@ function goToNextSection(){
     
     if(filteredArr.length > 0){
     window.scrollTo({
-        top:filteredArr[0][0] - (window.innerHeight - filteredArr[0][1])/2 + 30,
+        top:filteredArr[0][0] - (window.innerHeight - filteredArr[0][1])/2 - 30,
         left:0,
         behavior:"smooth"
     })   
