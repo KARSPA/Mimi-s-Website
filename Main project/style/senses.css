@@ -72,7 +72,7 @@ main .center-logo span{
 }
 
 .senses-nav{
-    width: 95%;
+    width: 95vw;
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -80,7 +80,7 @@ main .center-logo span{
 }
 
 .sense-btn{
-    width: 300px;
+    width: 100%;
     aspect-ratio: 1;
     font-family: Open Sans, sans-serif;;
     font-size: 22px;
@@ -119,7 +119,7 @@ main .center-logo span{
 }
 
 .sense-btn img{
-    width: 300px;
+    width: 100%;
     aspect-ratio: 1;
     object-fit: cover;
     border-radius: 10px;
