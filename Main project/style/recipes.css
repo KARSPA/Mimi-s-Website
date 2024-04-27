@@ -63,6 +63,7 @@ main .center-logo span{
     font-weight: 400;
     letter-spacing: 2px;
     margin: 0 100px 20px;
+    transform: translateY(-50px);
 }
 
 .recipes-card-container{
@@ -70,6 +71,8 @@ main .center-logo span{
     max-width: 1600px;
     margin: 0 auto;
     padding: 0 0 200px;
+    transform: translateY(-50px);
+
 }
 
 .recipe-card{
@@ -85,7 +88,7 @@ main .center-logo span{
 
 .recipe-card .card-title{
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-family: Great Vibes, sans-serif;
     font-size: 40px;
     font-weight: 300;
