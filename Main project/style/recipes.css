@@ -5,22 +5,11 @@
 body{
     background-color: #1d0e08;
     color: #f1f1f1;
-    font-family: Caligna, sans-serif;
+    font-family: Open Sans, sans-serif;
+    position: relative;
     /* height: 300vh; */
 }
 
-@font-face {
-    font-family: "Caligna";
-    src: url(../../ressources/CalignaDEMO.ttf);
-}
-
-
-
-main{
-    margin: 0 auto;
-    max-width: 1600px;
-    /* border: 1px solid yellow; */
-}
 
 main .center-logo{
     position: relative;
@@ -68,14 +57,81 @@ main .center-logo span{
 }
 
 
+.title{
+    font-family: Great Vibes, sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin: 0 100px 20px;
+}
 
+.recipes-card-container{
+    /* border: 1px solid green; */
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 0 200px;
+}
 
+.recipe-card{
+    border: 1px solid #783b18;
+    border-radius: 10px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.recipe-card .card-title{
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: Great Vibes, sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.recipe-card .info-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+}
+
+.recipe-card .info-container > div{
+    border: 1px solid #3c1d0c;
+    border-radius: 5px;
+    padding: 10px 30px;
+
+}
+
+.info-container h3{
+    position: relative;
+    width: max-content;
+    margin: 0 auto 20px;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.info-container h3::after{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    background-color: #f1f1f1;
+    bottom: -3px;
+    left: 25%;
+}
+
+.info-container h4{
+    margin: 15px 0 7px;
+}
+
+.info-container ul{
+    margin-left: 30px;
+}
 
 footer{
     position: absolute;
     width: 100%;
     bottom: 0;
-    height: 50px;
     border-top: 1px solid #783b18;
     background-color: #0e0b0a;
 }

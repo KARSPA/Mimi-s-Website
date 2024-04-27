@@ -11,10 +11,6 @@ body{
     /* height: 300vh; */
 }
 
-@font-face {
-    font-family: "Caligna";
-    src: url(../../ressources/CalignaDEMO.ttf);
-}
 
 .navbar .right-links a:nth-of-type(2){
     color: #783b18;
@@ -119,7 +115,7 @@ main .center-logo span{
 }
 
 .introduction-container{
-    border: 1px solid rgb(60, 29, 12);
+    border: 1px solid #3c1d0c;
     border-radius: 10px;
     padding: 20px;
     width: 85%;
