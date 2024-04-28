@@ -238,7 +238,7 @@ main .center-logo span{
 }
 
 .border:hover::after{
-    transform: scale(1);
+    transform: scale(0.7);
 }
 
 .border:hover{

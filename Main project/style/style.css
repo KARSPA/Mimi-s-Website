@@ -224,7 +224,8 @@ main .center-logo span{
 
 .cards-container{
     padding: 100px 0;
-    background-color: #0e0b0a;
+    background-color: #160b06;
+    ;
     /* background-image: url(../../ressources/fond-chocolat-marron.jpg); */
 }
 
@@ -353,13 +354,13 @@ main .center-logo span{
     background-color: #f1f1f1;
     position: absolute;
     bottom: -8px;
-    right:21%;
+    right:20.5%;
     transform: scale(0);
     transition: transform 0.3s ease-in;
 }
 
 .reservation-roll a:hover::after{
-    transform: scale(1);
+    transform: scale(0.6);
 }
 
 
