@@ -148,6 +148,18 @@ main .center-logo span{
     margin-left: 30px;
 }
 
+.photography-container{
+    margin: 30px auto;
+    border-radius: 5px;
+}
+
+.photography-container img{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #783b18;
+}
+
+
 footer{
     position: absolute;
     width: 100%;
