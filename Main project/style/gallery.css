@@ -89,8 +89,13 @@ main .center-logo span{
     object-fit: cover;
     object-position: center;
     border-radius: 10px;
+    /* border-radius: 10px 0 10px 0; */
 }
 
+/* .gallery-container .border-inversed{
+    border-radius: 0 10px 0 10px;
+}
+ */
 
 footer{
     position: absolute;
