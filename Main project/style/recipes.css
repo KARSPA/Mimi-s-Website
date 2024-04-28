@@ -186,3 +186,16 @@ footer p a{
         transform: translate(0);
     }
 }
+
+/* PARTIE RESPONSIVE */
+
+@media screen and (max-width: 1100px){  
+
+
+.recipe-card .info-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, fit-content);
+    gap: 20px;
+}
+}
