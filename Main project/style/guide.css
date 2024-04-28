@@ -139,7 +139,7 @@ main .center-logo span{
     width: 85%;
     /* border: 1px solid crimson; */
     display: grid;  
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 30px;
     margin: 150px auto;
     text-align: center;
@@ -334,5 +334,28 @@ footer p a{
 @keyframes fadein{
     100%{
         opacity: 1;
+    }
+}
+
+/* PARTIE RESPONSIVE */
+
+@media screen and (max-width: 1000px){
+
+    .senses-container{
+        width: 95%;
+        
+    }
+}
+
+@media screen and (max-width:873px){
+
+    .sense{
+        
+        min-height: 400px;
+        height:fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
