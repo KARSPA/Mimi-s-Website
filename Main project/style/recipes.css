@@ -7,7 +7,8 @@
 }
 
 body{
-    background-color: #1d0e08;
+    /* background-color: #1d0e08; */
+    background-color: #201108;
     color: #f1f1f1;
     font-family: Open Sans, sans-serif;
     position: relative;
@@ -80,10 +81,13 @@ main .center-logo span{
 }
 
 .recipe-card{
-    border: 1px solid #783b18;
+    background-color: #1d0e08;
+
+    /* background-color: #201108; */
+    border: 1px solid #4d2710;
     border-radius: 10px;
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto 100px;
     padding: 20px;
     opacity: 0;
     transform: translateX(-50px);
@@ -106,6 +110,9 @@ main .center-logo span{
 }
 
 .recipe-card .info-container > div{
+    /* background-color: #1d0e08; */
+    background-color: #201108;
+
     border: 1px solid #3c1d0c;
     border-radius: 5px;
     padding: 10px 30px;
