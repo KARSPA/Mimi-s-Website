@@ -202,7 +202,10 @@ footer p a{
 .recipe-card .info-container{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, fit-content);
     gap: 20px;
+}
+
+.recipe-card .info-container > div{
+    padding: 20px 2px;
 }
 }
