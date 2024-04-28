@@ -89,6 +89,9 @@ main .center-logo span{
     object-fit: cover;
     object-position: center;
     border-radius: 10px;
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: none;
     /* border-radius: 10px 0 10px 0; */
 }
 
@@ -117,6 +120,13 @@ footer p a{
 }
 
 @keyframes slidein{
+    100%{
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes slideinbis{
     100%{
         opacity: 1;
         transform: none;
