@@ -224,7 +224,7 @@ main .center-logo span{
 
 .cards-container{
     padding: 100px 0;
-    background-color: #160b06;
+    background-color: #1e0d04;
     ;
     /* background-image: url(../../ressources/fond-chocolat-marron.jpg); */
 }
@@ -268,8 +268,11 @@ main .center-logo span{
 
 .card img{
     height: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
     clip-path: inset(0%);
     transition: clip-path 0.4s;
+    border-radius: 20px;
 }
 
 .card a::before{

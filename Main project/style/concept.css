@@ -73,6 +73,7 @@ main .center-logo span{
 .card img{
     width: 300px;
     border-radius: 3px;
+    transform:rotateY(180deg)
 }
 
 .card{
