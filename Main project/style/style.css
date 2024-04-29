@@ -15,7 +15,7 @@
 } */
 
 body{
-    background-color: #2c1805;
+    background-color: #120907;
     color: #f1f1f1;
     /* height: 300vh; */
 }
@@ -40,7 +40,7 @@ body{
 
 /*Début style flèche de navigation*/
 
-nav button{
+.nav-buttons button{
     background-color: transparent;
     border: none;
     outline: none;
@@ -84,7 +84,7 @@ nav button img{
 /*Début style du logo*/
 main .center-logo{
     position: relative;
-    z-index: 10;
+    z-index: 3;
     margin: 0 auto ;
     cursor: pointer;
     width: fit-content;
@@ -174,11 +174,14 @@ main .center-logo span{
 
 /*Fin style hero-section*/
 
+.main{
+    background-color: #120907;
+}
 
 
 .cards-container{
     padding: 100px 0;
-    background-color: #1e0d04;
+    background-color: #120907;
     ;
     /* background-image: url(../../ressources/fond-chocolat-marron.jpg); */
 }
@@ -198,9 +201,14 @@ main .center-logo span{
 .card .text-content{
     /* border: 1px solid green; */
     grid-column: 2/3;
-    width: 500px;
+    width: clamp(400px,30vw);
     margin: auto auto auto 0;
   
+}
+
+
+.card .text-content .desc-line{
+    display: block;
 }
 .card-title{
     font-family: Great Vibes, sans-serif;
@@ -216,7 +224,7 @@ main .center-logo span{
     cursor: pointer;
     object-fit: cover;
     margin: auto;
-    height: 500px;
+    height: 30vw;
     /* box-shadow: 3px 3px 5px rgba(255,255,255,0.8); */
 }
 
@@ -226,7 +234,7 @@ main .center-logo span{
     object-fit: cover;
     clip-path: inset(0%);
     transition: clip-path 0.4s;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .card a::before{
@@ -235,7 +243,7 @@ main .center-logo span{
     top: 42%;
     left: -30%;
     z-index: 1;
-    width: 200px;
+    width: 60%;
     height: 1px;
     background-color: #f1f1f1;
     transition: transform 0.4s 0.1s;
@@ -251,7 +259,7 @@ main .center-logo span{
 
 
 .card.inverted{
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 170px 1fr;
 }
 
 .card.inverted .link{
@@ -259,7 +267,7 @@ main .center-logo span{
 }
 
 .card.inverted .text-content{
-    margin:auto 0 auto auto;
+    /* margin:auto 0 auto auto; */
     grid-column:3/4;
 }
 
@@ -386,4 +394,12 @@ footer p a{
         opacity: 1;
         transform: translateY(-60px);
     }
+}
+
+
+@media screen and (max-width: 900px) {
+    main .center-logo {
+        margin: 50px auto;
+    }
+
 }

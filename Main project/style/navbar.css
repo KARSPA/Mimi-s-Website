@@ -3,8 +3,7 @@
     position: sticky;
     top: 50px;
     margin: 50px 50px 0;
-    display: flex;
-    justify-content: space-between;
+    
     z-index: 1; /*Car problème d'intersection avec les cards plus bas*/
 
     /*Gère l'animation d'apparition au chargement de la page*/
@@ -12,6 +11,12 @@
     transform: translateY(-30px);
     animation: apparition 0.8s 1.3s ease-out forwards; */
 }
+
+.navbar .subnav{
+    display: flex;
+    justify-content: space-between;
+}
+
 
 .navbar .links{
     display: flex;
@@ -55,32 +60,95 @@
     transform: translateY(-4px);
 }
 
-.menu-icon-container{
+.menu-icon-btn{
     display: none;
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    z-index: 10;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    width: 50px;
+    aspect-ratio: 1;
+
 }
+
 
 
 @media screen and (max-width: 900px){
 
-.navbar{
+main .center-logo{
+    margin:50px auto;
+}
+
+
+body .navbar{ 
+    opacity: 1;
     display: block;
     height: 40px;
-}
-
-.navbar .links{
-    display: none;
-}
-
-.menu-icon-container{
-    position: fixed;
     margin: 0;
-    display: block;
-    width: 50px;
+    top: 0;
+    transform: none;
+    animation: none;
+    
 }
-.menu-icon-container img{
-    width: 100%;
-    aspect-ratio: 1;
 
+.navbar .subnav{
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    background-color: rgb(15, 14, 13);
+    transform: translateY(-100%);
+    transition: transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
+    animation: none;
+}
+
+.navbar.active .subnav{
+    transform: translate(0);
+}
+
+.navbar .subnav .links{
+    display: flex;
+    flex-direction: column;
+}
+.menu-icon-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #f1f1f1;
+    transition: transform 0.3s ease-out,
+    opacity 0.1s ease-out;
+}
+
+.l1{
+    transform: translateY(-15px);
+}
+
+.l3{
+    transform: translateY(15px);
+}
+
+.menu-icon-btn.active .l1{
+    transform: translateY(0) rotate(135deg);
+}
+.menu-icon-btn.active .l3{
+    transform: translateY(0) rotate(-135deg);
+}
+.menu-icon-btn.active .l2{
+    opacity: 0;
 }
 
 }
