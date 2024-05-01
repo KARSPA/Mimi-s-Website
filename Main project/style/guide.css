@@ -359,3 +359,11 @@ footer p a{
         align-items: center;
     }
 }
+
+@media screen and (max-width: 900px) {
+    
+    main .center-logo {
+        margin: 50px auto;
+    }
+
+}

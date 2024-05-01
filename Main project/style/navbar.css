@@ -79,10 +79,6 @@
 
 @media screen and (max-width: 900px){
 
-main .center-logo{
-    margin:50px auto;
-}
-
 
 body .navbar{ 
     opacity: 1;
@@ -98,8 +94,9 @@ body .navbar{
 .navbar .subnav{
     position: relative;
     z-index: 5;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
+    overflow-y: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;

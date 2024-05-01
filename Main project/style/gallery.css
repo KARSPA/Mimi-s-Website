@@ -71,7 +71,7 @@ main .center-logo span{
 .gallery-container{
     border: 1px solid #783b18;
     border-radius: 10px;
-    max-width: 1600px;
+    width: 90%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -131,4 +131,15 @@ footer p a{
         opacity: 1;
         transform: none;
     }
+}
+
+@media screen and (max-width: 900px) {
+    main .center-logo {
+        margin: 50px auto;
+    }
+
+    .gallery-container{
+        width: 100%;
+    }
+
 }

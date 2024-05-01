@@ -365,3 +365,10 @@ footer p a{
         transform: rotate(-90deg) translateX(10px);
     }
 }
+
+@media screen and (max-width: 900px) {
+    main .center-logo {
+        margin: 50px auto;
+    }
+
+}
