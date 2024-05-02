@@ -72,3 +72,26 @@ function handleButtonApparition(){
         goDownBtn.style.display = "none"
     }
 }
+
+
+
+// Gestion en mode mobile
+
+const faqBtns = document.querySelectorAll(".unroll-faq-btn");
+
+faqBtns.forEach(btn => btn.addEventListener("click",unrollCard))
+
+function unrollCard(e){
+    const btnNbrbis = e.target.classList[1];
+    console.log(btnNbrbis)
+    const btnNbr = btnNbrbis[btnNbrbis.length - 1]
+    
+    const cardsArr = document.querySelectorAll(".sense-card");
+    
+    const clickedCard = cardsArr[btnNbr - 1]
+    clickedCard.classList.toggle("active")
+
+    e.target.classList.toggle("active")
+
+
+}

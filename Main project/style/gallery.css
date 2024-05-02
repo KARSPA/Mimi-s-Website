@@ -138,6 +138,11 @@ footer p a{
         margin: 50px auto;
     }
 
+    .title{
+        margin: 50px auto;
+        text-align: center;
+    }
+
     .gallery-container{
         width: 100%;
     }
