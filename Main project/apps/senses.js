@@ -22,10 +22,10 @@ function goToSection(e){
 const divArr = [...document.querySelectorAll("main .sense-card")].map(element => [element.offsetTop, element.clientHeight]);
 console.log(divArr);
 
-const goDownBtns = document.querySelectorAll(".go-down-btn");
-console.log(goDownBtns)
+const goDownBtn = document.querySelector(".go-down-btn");
+console.log(goDownBtn)
 
-goDownBtns.forEach(btn => btn.addEventListener("click", goToNextSection))
+goDownBtn.addEventListener("click", goToNextSection)
 
 
 function goToNextSection(){
@@ -35,7 +35,7 @@ function goToNextSection(){
     
     if(filteredArr.length > 0){
     window.scrollTo({
-        top:filteredArr[0][0] - (window.innerHeight - filteredArr[0][1])/2 + 100,
+        top:filteredArr[0][0] - (window.innerHeight - filteredArr[0][1])/2 + 50,
         left:0,
         behavior:"smooth"
     })   
@@ -46,11 +46,11 @@ function goToNextSection(){
     // console.log(document.body.clientHeight - window.innerHeight);
 }
 
-const goToTopBtns = document.querySelectorAll(".go-to-top-btn");
-console.log(goToTopBtns);
+const goToTopBtn = document.querySelector(".go-to-top-btn");
+console.log(goToTopBtn);
 
 
-goToTopBtns.forEach(btn => btn.addEventListener("click", goToTop));
+goToTopBtn.addEventListener("click", goToTop);
 
 function goToTop(){
     window.scrollTo({
@@ -60,3 +60,15 @@ function goToTop(){
     })
 }
 
+window.addEventListener("scroll", handleButtonApparition);
+
+function handleButtonApparition(){
+    if(window.scrollY < 800){
+        goToTopBtn.style.display = "none"
+    }else if(window.scrollY > 800 && window.scrollY < document.body.clientHeight - window.innerHeight - 700){
+        goToTopBtn.style.display = "block"
+        goDownBtn.style.display = "block"
+    }else{
+        goDownBtn.style.display = "none"
+    }
+}

@@ -17,6 +17,50 @@ body{
 }
 
 
+
+.nav-buttons button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 60px;
+    height: 30px;
+}
+
+.go-down-btn{
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    transform: rotate(90deg);
+    transition: transform 0.2s ease-in;
+    z-index: 10;
+    /* border: inset 1px crimson; */
+}
+
+.go-down-btn:hover{
+    transform: rotate(90deg) translateX(10px);
+}
+
+.go-to-top-btn{
+    position: fixed;
+    bottom: 50px;
+    right: 70px;
+    transform: rotate(-90deg);
+    transition: transform 0.2s ease-in;
+    z-index: 10;
+
+}
+.go-to-top-btn:hover{
+    transform: rotate(-90deg) translateX(10px);
+}
+
+nav button img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
 main .center-logo{
     position: relative;
     z-index: 10;
@@ -69,6 +113,10 @@ main .center-logo span{
     font-weight: 300;
     letter-spacing: 3px;
     margin: 50px 0 0 8% ;
+}
+
+.hero{
+    height: 100vh;
 }
 
 .senses-nav{
@@ -131,87 +179,52 @@ main .center-logo span{
 }
 
 
-.nav-buttons{
-    width: 200px;
-    height: 100px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.go-down-btn{
-    opacity: 0.7;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    width: 70px;
-    height: 30px;
-    background-color: transparent;
-    transform: rotate(90deg);
-    animation: altslide 0.5s 0.7s ease-in alternate infinite;
-    /* border: inset 1px crimson; */
-}
-
-.first-btn{
-    display: block;
-    margin: 200px auto;
-}
-.go-down-btn img{
-    width: 100%;
-}
-
-
-.go-to-top-btn{
-    height: 35px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    opacity: 0.8;
-    transform: rotate(-90deg);
-    animation: altslidebis 0.5s 0.7s ease-in alternate infinite;
-}
-
-.go-to-top-btn:hover{
-    opacity: 0.8;
-}
-
-.go-to-top-btn img{
-    width: 100%;
-    height: 100%;
-}
-
-.last-btn{
-    display: block;
-    margin: 0 auto;
-}
+ 
 
 /* STYLE DES CARDS DES SENS */
 
 .senses-card-container{
     max-width: 1600px;
-    margin: 100px auto 0;
+    margin: 0 auto;
     padding-bottom: 200px;
     /* border: 1px solid yellow; */
 }
 
+.sense-card:nth-of-type(1){
+    margin:0 auto 35vh;
+}
+
+
 .sense-card{
+    margin: 35vh auto;
+    height: max-content;
     border: 1px solid #783b18;
     padding: 20px;
     border-radius: 10px;
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 1fr;
+}
+
+.sense-card:nth-of-type(5){
+    margin-bottom: 100px;
+}
+
+.sense-card .left-side{
+    margin-right: 20px;
 }
 
 .sense-card .right-side{
-    margin-left: 30px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
 }
 
+
+
 .sense-card .image-description{
-    margin:0;
+    margin: 0;
     width: 100%;
+    max-width: 300px;
     padding: 8px;
     text-align: center;
     color: #1d0e08;
@@ -221,16 +234,20 @@ main .center-logo span{
 .sense-card .right-side img{
     border-radius: 5px 5px 0 0;
     width: 100%;
+    max-width: 300px;
 }
 
+.sense-card .card-title{
+    margin: 10px 0 30px;
+}
 
 .sense-card p{
-    margin: 10px 5px 10px;
+    margin: 10px 0;
 }
 
 .left-side span{
     display: block;
-    margin: 10px 0 5px;
+    margin: 5px 0 10px;
     font-weight: 600;
 }
 
@@ -243,6 +260,14 @@ main .center-logo span{
     /* margin: 10px 5px 10px; */
 }
 
+
+.sense-card-nav{
+    margin-top: 10vh;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
 
 
 /* FIN DU STYLE DES CARDS DE SENS */
@@ -306,5 +331,8 @@ footer p a{
     main .center-logo {
         margin: 50px auto;
     }
+
+
+
 
 }
