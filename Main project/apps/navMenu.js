@@ -1,8 +1,8 @@
-
-
 const hamburgerBtn = document.querySelector(".menu-icon-btn")
 
 const navigation = document.querySelector(".navbar ")
+
+const navBtnsBis = document.querySelectorAll(".nav-buttons button")
 
 hamburgerBtn.addEventListener("click", toggleNavAndScroll)
 
@@ -17,6 +17,7 @@ function toggleNavAndScroll(){
             document.body.style.top = `-${window.scrollY}px`;
             // console.log("Oui : " + document.body.style.top)
             document.body.style.position = 'fixed';
+            navBtnsBis.forEach(btn => btn.style.visibility = "hidden")
 
         
     }else{
@@ -24,6 +25,9 @@ function toggleNavAndScroll(){
         document.body.style.position = '';
         document.body.style.top = '';
         window.scrollTo(0, parseInt(scrollY || '0') * -1);
+        navBtnsBis.forEach(btn => btn.style.visibility = "visible")
+
+        
 
     }
 }
