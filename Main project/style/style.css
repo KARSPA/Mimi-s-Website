@@ -396,6 +396,17 @@ footer p a{
 }
 
 
+@media screen and (max-width: 600px){
+
+    .hero-content .title{
+        font-size: 15vw;
+    }
+
+    .hero-content .subtitle{
+        font-size: 10vw;
+    }
+}
+
 @media screen and (max-width: 900px) {
 
     .nav-buttons button{
@@ -409,6 +420,8 @@ footer p a{
     .hero-content{
         padding: 10vh 0 5vh;
     }
+
+    
 
 }
 
