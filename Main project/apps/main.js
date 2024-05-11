@@ -61,7 +61,6 @@ function changeToWhite(e){
     // Fin de gestion du hover
 
 
-
     // Gestion du scrollToTop
 const goToTopBtn = document.querySelector(".go-to-top-btn");
 
@@ -69,14 +68,23 @@ goToTopBtn.style.display = "none";
 window.addEventListener("scroll", handleButtonApparition);
 
 function handleButtonApparition(){
-    if(window.scrollY < 800){
-        goToTopBtn.style.display = "none"
-    }else if(window.scrollY > 800 && window.scrollY < document.body.clientHeight - window.innerHeight - 700){
-        goToTopBtn.style.display = "block"
-        goDownBtn.style.display = "block"
+
+    if(window.innerWidth > 900){
+        
+        if(window.scrollY < 800){
+            goToTopBtn.style.display = "none"
+        }else if(window.scrollY > 800 && window.scrollY < document.body.clientHeight - window.innerHeight - 700){
+            goToTopBtn.style.display = "block"
+            goDownBtn.style.display = "block"
+        }else{
+            goDownBtn.style.display = "none"
+        }
     }else{
+        
+        goToTopBtn.style.display = "none"
         goDownBtn.style.display = "none"
     }
+
 }
 
 goToTopBtn.addEventListener("click", goToTop);
