@@ -182,7 +182,7 @@ main .center-logo span{
 .cards-container{
     padding: 100px 0;
     background-color: #120907;
-    ;
+    
     /* background-image: url(../../ressources/fond-chocolat-marron.jpg); */
 }
 
@@ -397,6 +397,10 @@ footer p a{
 
 
 @media screen and (max-width: 600px){
+
+    .cards-container{
+        width: 100vw;
+    }
 
     .hero-content .title{
         font-size: 15vw;
