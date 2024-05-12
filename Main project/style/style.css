@@ -425,6 +425,48 @@ footer p a{
         padding: 10vh 0 5vh;
     }
 
+    .reservation-roll{
+        overflow: hidden;
+        padding: 80px 5px;
+        margin: 100px 0 100px;
+        text-align: center;
+    }
+
+    .reservation-roll h2{
+        margin-bottom: 30px;
+        font-family: Great Vibes, sans-serif;
+        font-weight: 300;
+        font-size: 40px;
+    }
+    
+    .reservation-roll p{
+        font-family: Open Sans, sans-serif;
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+    
+    .reservation-roll a{
+        display: block;
+        width: 200px;
+        margin: 0 auto;
+        text-decoration: none;
+        color: #f1f1f1;
+        font-family: Open Sans, sans-serif;
+        font-size: 25px;
+        font-weight: 300;
+        position: relative;
+    }
+
+    .reservation-roll a::after{
+        content: "";
+        width: 60%;
+        height: 2px;
+        background-color: #f1f1f1;
+        position: absolute;
+        bottom: -8px;
+        transform: scale(0.6);
+        transition: none;
+    }
     
 
 }
