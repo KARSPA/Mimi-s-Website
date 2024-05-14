@@ -17,6 +17,8 @@
 body{
     background-color: #120907;
     color: #f1f1f1;
+    /* width: 100%; */
+    overflow-x: hidden;
     /* height: 300vh; */
 }
 
@@ -196,6 +198,7 @@ main .center-logo span{
     font-family: Open Sans, sans-serif;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    overflow-x: hidden;
 }
 
 .card .text-content{
@@ -350,12 +353,12 @@ footer p a{
 /* Gestion des apparitions */
 .reveal{
     opacity: 0;
-    transform: translateX(30px);
+    transform: translateX(10px);
 }
 
 .reveal.inverted{
     opacity:0;
-    transform: translateX(-30px);
+    transform: translateX(-10px);
 }
 
 .reveal-visible{
@@ -371,7 +374,7 @@ footer p a{
 
 #reservation.reveal{
     opacity:0;
-    transform: translateY(-30px);
+    transform: translateY(-10px);
 }
 #reservation.reveal-visible{
     opacity: 1;

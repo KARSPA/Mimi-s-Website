@@ -314,7 +314,7 @@ footer p a{
 
 .participate-container.reveal{
     opacity: 0;
-    transform: translateX(30px);
+    transform: translateX(10px);
 }
 
 .participate-container.reveal-visible{
